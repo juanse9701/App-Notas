@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornsilk;
+}
+
+.main-title {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 23pt;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.main div {
+    padding: 20px;
+}
+
+.textArea {
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+}
+
+#send {
+    width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    background-color: rgb(15, 92, 95);
+    color: cornsilk;
+    box-sizing: content-box;
+    border: none;
+}
+
+.notas {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.borrar-nota {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: red;
+}
+
+li {
+    position: relative;
+    padding: 5px;
+    border: solid 1px cornsilk;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 3px 0px
+}
+
+form > p, textarea, button {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 530px) {
+
+    .main {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
